@@ -1,0 +1,114 @@
+/* App.css o index.css */
+/* En lugar de usar @import "~slick-carousel/slick/slick.css"; usa esta ruta */
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+
+
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-image: url('/ruta/a/tu/imagen.jpg'); /* Ruta de la imagen */
+  background-size: cover; /* Cubre toda la sección */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+#home h1 {
+  font-size: 2.5rem;
+  color: #fff; /* Cambié el color a blanco para hacerlo visible sobre el fondo */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Agrega sombra al texto para mejor visibilidad */
+}
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.slick-slide div {
+  text-align: center;
+}
+
+.slick-slide svg {
+  margin-bottom: 10px;
+}
+
+#contact {
+  padding: 2rem;
+  background-color: #1f2937; /* Fondo oscuro */
+  color: #fff; /* Texto claro */
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #38bdf8; /* Azul claro */
+}
+
+#contact p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-item {
+  font-size: 1.2rem;
+}
+
+.contact-item a {
+  color: #38bdf8; /* Azul claro */
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}

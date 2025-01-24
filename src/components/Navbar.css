@@ -1,0 +1,64 @@
+/* Navbar inicial con solo el ícono */
+.navbar {
+    position: fixed;
+    top: 5%;
+    left: 2%;
+    transform: translate(-50%, -40%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: #fff;
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+  
+  /* Navbar expandida */
+  .navbar.expanded {
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    width: 98%;
+    height: 70px;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Ícono de hamburguesa o X */
+  .hamburger {
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1100;
+  }
+  
+  /* Lista de enlaces de navegación */
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    list-style: none;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #00bcd4;
+  }
+  
+  /* Ocultar enlaces si la barra no está expandida */
+  .nav-links {
+    display: none;
+  }
+  
+  .navbar.expanded .nav-links {
+    display: flex;
+  }
+  
